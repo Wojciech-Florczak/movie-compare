@@ -45,7 +45,7 @@ const createAutoComplete = ({
     });
   };
 
-  input.addEventListener("input", debounce(onInputChange, 700));
+  input.addEventListener("input", debounce(onInputChange, 500));
 
   document.addEventListener("click", e => {
     if (!root.contains(e.target)) {
